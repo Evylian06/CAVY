@@ -15,12 +15,12 @@ const productos = [
     imagen: "torta-helada.png"
   },
   {
-    nombre: "Torta personalizada",
-    categoria: "tortas",
+    nombre: "Pie de Manzana",
+    categoria: "Postres Artesanales",
     etiqueta: "A pedido",
-    descripcion: "Diseño, sabor y decoración coordinados según tu ocasión.",
+    descripcion: "Delicioso pie de manzana con relleno casero, trozos de manzana y un toque de canela sobre una base crocante.",
     precio: "Cotizar",
-    imagen: "torta-personalizada.jpg"
+    imagen: "pie-manzana.png"
   },
   {
     nombre: "Cupcakes decorados",
