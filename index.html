@@ -1,372 +1,191 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CAVY — Postres & Más</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
-  <link rel="icon" href="logo2.png" type="image/png"/>
-  <link rel="stylesheet" href="../css/cavy.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CAVY Postres & Más: pastelería artesanal, tortas, cupcakes, chocotejas y postres personalizados para tus momentos especiales.">
+  <title>CAVY | Postres & Más</title>
+  <link rel="icon" type="image/x-icon" href="icocavy.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/cavy.css">
 </head>
 <body>
-
-
-<div id="page-loader" role="status" aria-label="Cargando CAVY">
-  <!-- Partículas flotantes -->
-  <div class="loader-particle"></div>
-  <div class="loader-particle"></div>
-  <div class="loader-particle"></div>
-  <div class="loader-particle"></div>
-  <div class="loader-particle"></div>
-  <div class="loader-particle"></div>
-
-  <!-- Anillos decorativos -->
-  <div class="loader-ring loader-ring-1"></div>
-  <div class="loader-ring loader-ring-2"></div>
-  <div class="loader-ring loader-ring-3"></div>
-
-  <!-- Contenido central -->
-  <div class="loader-content">
-    <div class="loader-logo">CAVY</div>
-    <div class="loader-divider">
-      <div class="loader-divider-line"></div>
-      <div class="loader-divider-dot"></div>
-      <div class="loader-divider-line"></div>
-    </div>
-    <p class="loader-subtitle">Postres &amp; Más</p>
+  <div id="page-loader" aria-label="Cargando CAVY" role="status">
+    <div class="loader-mark">CAVY</div>
+    <div class="loader-bar"><span></span></div>
+    <p>Preparando algo dulce...</p>
   </div>
 
-  <!-- Barra de progreso -->
-  <div class="loader-progress-wrap">
-    <div class="loader-progress-bar">
-      <div class="loader-progress-fill"></div>
-    </div>
-    <p class="loader-progress-text">Preparando algo dulce…</p>
-  </div>
-</div>
+  <nav class="navbar" id="navbar" aria-label="Navegación principal">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span>CAVY</span>
+      <small>Postres & Más</small>
+    </a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#pedidos">Pedidos</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
 
-<!-- NAV -->
-<nav class="navbar" id="navbar">
-  <a href="#inicio" class="logo">CAVY<span class="logo-dot"></span></a>
-  <button class="hamburger" id="hamburger" aria-label="Menú">
-    <span></span><span></span><span></span>
-  </button>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#inicio" class="active">Inicio</a></li>
-    <li><a href="#productos">Postres</a></li>
-    <li><a href="#galeria">Galería</a></li>
-    <li><a href="#contacto">Reseñas</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<header id="inicio">
-  <div class="hero-image"></div>
-  <div class="hero-deco hero-deco-1"></div>
-  <div class="hero-deco hero-deco-2"></div>
-  <div class="hero-content">
-    <p class="hero-eyebrow">Postres Artesanales</p>
-    <h1 class="hero-title">CAVY<br><em>dulzura</em><br>en cada bocado</h1>
-    <p class="hero-sub">Creamos postres únicos con amor, ingredientes frescos y la magia que mereces.</p>
-    <a href="#productos" class="btn-hero"><span>Ver nuestros postres</span></a>
-  </div>
-  <div class="scroll-hint"><div class="line"></div></div>
-</header>
-
-<!-- PRODUCTS -->
-<section id="productos" class="sec">
-  <div class="prod-header">
-    <div>
-      <p class="sec-label">Nuestra Carta</p>
-      <h2 class="sec-title">Nuestras <em>especialidades</em></h2>
-    </div>
-    <p class="prod-desc reveal">Elaborados a diario con ingredientes frescos y mucho amor. Cada postre es una pequeña obra de arte.</p>
-  </div>
-
-  <div class="cards-grid">
-    <div class="card reveal">
-      <span class="card-badge">Favorito</span>
-      <div class="card-img-wrap"><img src="chupete.png" alt="Chupetes cavy"/></div>
-      <div class="card-body">
-        <h3 class="card-name">Chupetes Cavy</h3>
-        <p class="card-desc">Base de galleta dorada, crema cheese suave y coulis de fresas frescas.</p>
-        <span class="card-price">S/ 35</span>
-        <button class="btn-wa" onclick="pedirWhatsApp('Chupetes Cavy')"><i class="fab fa-whatsapp"></i><span>Pedir ahora</span></button>
+  <header class="hero" id="inicio">
+    <div class="hero-media" aria-hidden="true"></div>
+    <div class="hero-content reveal">
+      <p class="eyebrow">Pastelería artesanal</p>
+      <h1>Postres bonitos para celebrar mejor</h1>
+      <p class="hero-copy">Tortas, cupcakes, chocotejas y dulces hechos con cuidado, presentación delicada y sabores que se sienten de casa.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#productos">Ver productos</a>
+        <a class="btn ghost js-whatsapp" href="https://wa.me/51989191035?text=Hola%20CAVY%2C%20quisiera%20cotizar%20un%20pedido%20de%20postres." target="_blank" rel="noopener">Pedir por WhatsApp</a>
       </div>
     </div>
-    <div class="card reveal">
-      <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=600" alt="Brownie de Chocolate"/></div>
-      <div class="card-body">
-        <h3 class="card-name">Brownie Intenso</h3>
-        <p class="card-desc">Chocolate belga 70%, húmedo por dentro, con nueces caramelizadas.</p>
-        <span class="card-price">S/ 18</span>
-        <button class="btn-wa" onclick="pedirWhatsApp('Brownie Intenso')"><i class="fab fa-whatsapp"></i><span>Pedir ahora</span></button>
+    <div class="hero-card reveal">
+      <span>Pedidos personalizados</span>
+      <strong>Con anticipación</strong>
+      <p>Cuéntales la ocasión, sabor favorito y fecha de entrega.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro-section" aria-label="Presentacion">
+      <div class="intro-copy reveal">
+        <p class="eyebrow">Hecho con amor</p>
+        <h2>Dulces detalles para compartir, regalar o darte un gusto.</h2>
+      </div>
+      <div class="intro-grid">
+        <article class="info-tile reveal">
+          <i class="fa-solid fa-cake-candles" aria-hidden="true"></i>
+          <h3>Postres frescos</h3>
+          <p>Preparamos cada pedido con ingredientes seleccionados y buena presentación.</p>
+        </article>
+        <article class="info-tile reveal">
+          <i class="fa-solid fa-gift" aria-hidden="true"></i>
+          <h3>Detalles para eventos</h3>
+          <p>Opciones para cumpleaños, reuniones, regalos y fechas especiales.</p>
+        </article>
+        <article class="info-tile reveal">
+          <i class="fa-solid fa-heart" aria-hidden="true"></i>
+          <h3>Atención cercana</h3>
+          <p>Coordinamos sabores, cantidades y entregas directamente por WhatsApp.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section products-section" id="productos">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Nuestra carta</p>
+        <h2>Productos disponibles</h2>
+        <p>Esta sección se actualiza fácilmente desde el archivo <strong>js/cavy.js</strong>.</p>
+      </div>
+      <div class="product-tools reveal" aria-label="Filtros de productos">
+        <button class="filter-btn active" type="button" data-filter="todos">Todos</button>
+        <button class="filter-btn" type="button" data-filter="tortas">Tortas</button>
+        <button class="filter-btn" type="button" data-filter="postres">Postres</button>
+        <button class="filter-btn" type="button" data-filter="detalles">Detalles</button>
+      </div>
+      <div class="cards-grid" id="productGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="section order-section" id="pedidos">
+      <div class="order-panel reveal">
+        <div>
+          <p class="eyebrow">Cómo pedir</p>
+          <h2>Tu pedido en 3 pasos</h2>
+        </div>
+        <ol class="steps">
+          <li><span>1</span>Elige el producto o cuéntanos tu idea.</li>
+          <li><span>2</span>Confirma fecha, cantidad, dedicatoria y lugar de entrega.</li>
+          <li><span>3</span>Recibe la confirmación por WhatsApp y disfruta.</li>
+        </ol>
+        <a class="btn primary js-whatsapp" href="https://wa.me/51989191035?text=Hola%20CAVY%2C%20quisiera%20cotizar%20un%20pedido%20de%20postres." target="_blank" rel="noopener">Cotizar ahora</a>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Galería</p>
+        <h2>Un vistazo a nuestro estilo</h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item wide reveal">
+          <img src="chocoflan.png" alt="Postre CAVY con caramelo servido en plato" loading="lazy">
+          <figcaption>Postres con acabado delicado</figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=900&auto=format&fit=crop" alt="Cupcakes decorados" loading="lazy">
+          <figcaption>Cupcakes</figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=900&auto=format&fit=crop" alt="Torta decorada con crema" loading="lazy">
+          <figcaption>Tortas</figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=900&auto=format&fit=crop" alt="Brownie de chocolate" loading="lazy">
+          <figcaption>Chocolate</figcaption>
+        </figure>
+        <figure class="gallery-item tall reveal">
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=900&auto=format&fit=crop" alt="Torta personalizada con decoración" loading="lazy">
+          <figcaption>Pedidos especiales</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div class="contact-card reveal">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2>Hablemos de tu próximo postre</h2>
+          <p>Escríbenos para consultar disponibilidad, precios, sabores y pedidos personalizados.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="contact-link js-whatsapp" href="https://wa.me/51989191035?text=Hola%20CAVY%2C%20quisiera%20cotizar%20un%20pedido%20de%20postres." target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a class="contact-link js-instagram" href="#" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span>Instagram</span>
+          </a>
+          <a class="contact-link js-facebook" href="#" target="_blank" rel="noopener">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            <span>Facebook</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <a class="footer-brand" href="#inicio">CAVY</a>
+        <p>Postres & Más. Pastelería artesanal para momentos dulces.</p>
+      </div>
+      <div class="footer-socials">
+        <a class="js-whatsapp" href="https://wa.me/51989191035?text=Hola%20CAVY%2C%20quisiera%20cotizar%20un%20pedido%20de%20postres." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a class="js-instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a class="js-facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
       </div>
     </div>
-    <div class="card reveal">
-      <span class="card-badge">Nuevo</span>
-      <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=600" alt="Torta de Cumpleaños"/></div>
-      <div class="card-body">
-        <h3 class="card-name">Torta Personalizada</h3>
-        <p class="card-desc">Diseñada especialmente para ti, en el sabor y decoración que desees.</p>
-        <span class="card-price">desde S/ 90</span>
-        <button class="btn-wa" onclick="pedirWhatsApp('Torta Personalizada')"><i class="fab fa-whatsapp"></i><span>Pedir ahora</span></button>
-      </div>
-    </div>
-    <div class="card reveal">
-      <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=600" alt="Macarons"/></div>
-      <div class="card-body">
-        <h3 class="card-name">Macarons de Temporada</h3>
-        <p class="card-desc">Crujientes por fuera, suaves por dentro. Sabores que rotan cada semana.</p>
-        <span class="card-price">S/ 42 x 6 uds</span>
-        <button class="btn-wa" onclick="pedirWhatsApp('Macarons de Temporada')"><i class="fab fa-whatsapp"></i><span>Pedir ahora</span></button>
-      </div>
-    </div>
-    <div class="card reveal">
-      <span class="card-badge">Favorito</span>
-      <div class="card-img-wrap"><img src="Cupcake.png" alt="Cupcake"/></div>
-      <div class="card-body">
-        <h3 class="card-name">Cupcake de chocolate</h3>
-        <p class="card-desc">Bizcocho esponjoso, frosting de chocolate belga y toppings de temporada.</p>
-        <span class="card-price">S/ 10</span>
-        <button class="btn-wa" onclick="pedirWhatsApp('Cupcake de Chocolate')"><i class="fab fa-whatsapp"></i><span>Pedir ahora</span></button>
-      </div>
-    </div>
-    <div class="card reveal">
-      <div class="card-img-wrap"><img src="chocoteja.png" alt="Chocoteja"/></div>
-      <div class="card-body">
-        <h3 class="card-name">Chocotejas</h3>
-        <p class="card-desc">Chocolate artesanal relleno de manjarblanco, nuez y fruta confitada.</p>
-        <span class="card-price">S/ 30</span>
-        <button class="btn-wa" onclick="pedirWhatsApp('Chocotejas')"><i class="fab fa-whatsapp"></i><span>Pedir ahora</span></button>
-      </div>
-    </div>
-    <div class="card reveal">
-      <div class="card-img-wrap"><img src="crema-volteada.jpeg" alt="Crema Volteada"/></div>
-      <div class="card-body">
-        <h3 class="card-name">Crema Volteada</h3>
-        <p class="card-desc">Receta clásica peruana, textura sedosa y caramelo dorado irresistible.</p>
-        <span class="card-price">S/ 55</span>
-        <button class="btn-wa" onclick="pedirWhatsApp('Crema Volteada')"><i class="fab fa-whatsapp"></i><span>Pedir ahora</span></button>
-      </div>
-    </div>
-    <div class="card reveal">
-      <div class="card-img-wrap"><img src="torta-helada.png" alt="Torta helada"/></div>
-      <div class="card-body">
-        <h3 class="card-name">Torta Helada</h3>
-        <p class="card-desc">Capas de bizcocho, helado artesanal y cobertura de chocolate frío.</p>
-        <span class="card-price">S/ 80</span>
-        <button class="btn-wa" onclick="pedirWhatsApp('Torta helada')"><i class="fab fa-whatsapp"></i><span>Pedir ahora</span></button>
-      </div>
-    </div>
+    <p class="copyright">© <span id="year"></span> CAVY. Todos los derechos reservados.</p>
+  </footer>
+
+  <div class="floating-socials" aria-label="Contactos rápidos">
+    <a class="float-btn whatsapp js-whatsapp" href="https://wa.me/51989191035?text=Hola%20CAVY%2C%20quisiera%20cotizar%20un%20pedido%20de%20postres." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a class="float-btn instagram js-instagram" href="#" target="_blank" rel="noopener" aria-label="Ver Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a class="float-btn facebook js-facebook" href="#" target="_blank" rel="noopener" aria-label="Ver Facebook"><i class="fa-brands fa-facebook-f"></i></a>
   </div>
-</section>
 
-<!-- GALLERY -->
-<section id="galeria">
-  <div class="gallery-intro">
-    <div>
-      <p class="sec-label reveal">Momentos CAVY</p>
-      <h2 class="sec-title reveal">Cada postre<br>cuenta una <em>historia</em></h2>
-    </div>
-    <blockquote class="gallery-quote reveal">
-      "Hornear es amor hecho visible. Cada detalle, cada capa, cada sabor — es nuestra dedicación para ti."
-    </blockquote>
-  </div>
-  <div class="gallery-grid">
-    <div class="g-item g-featured reveal">
-      <span class="g-tag">Especial</span>
-      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=900" alt="Torta de Celebración" loading="lazy"/>
-      <div class="g-overlay"><div class="g-overlay-text"><span class="g-overlay-label">Tortas</span><span class="g-overlay-name">Torta de Celebración</span></div></div>
-    </div>
-    <div class="g-item reveal">
-      <img src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?q=80&w=600" alt="Cheesecake" loading="lazy"/>
-      <div class="g-overlay"><div class="g-overlay-text"><span class="g-overlay-label">Tartas</span><span class="g-overlay-name">Cheesecake del día</span></div></div>
-    </div>
-    <div class="g-item reveal">
-      <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=600" alt="Macarons coloridos" loading="lazy"/>
-      <div class="g-overlay"><div class="g-overlay-text"><span class="g-overlay-label">Petit fours</span><span class="g-overlay-name">Macarons de Temporada</span></div></div>
-    </div>
-    <div class="g-item reveal">
-      <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=600" alt="Pancakes dulces" loading="lazy"/>
-      <div class="g-overlay"><div class="g-overlay-text"><span class="g-overlay-label">Desayunos</span><span class="g-overlay-name">Pancakes Artesanales</span></div></div>
-    </div>
-    <div class="g-item reveal">
-      <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=700" alt="Brownie" loading="lazy"/>
-      <div class="g-overlay"><div class="g-overlay-text"><span class="g-overlay-label">Chocolate</span><span class="g-overlay-name">Brownie Intenso</span></div></div>
-    </div>
-    <div class="g-item reveal">
-      <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=600" alt="Macarons rosa" loading="lazy"/>
-      <div class="g-overlay"><div class="g-overlay-text"><span class="g-overlay-label">Edición</span><span class="g-overlay-name">Edición Floral</span></div></div>
-    </div>
-    <div class="g-item reveal">
-      <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=600" alt="Torta decorada" loading="lazy"/>
-      <div class="g-overlay"><div class="g-overlay-text"><span class="g-overlay-label">Personalizado</span><span class="g-overlay-name">Torta Personalizada</span></div></div>
-    </div>
-    <div class="g-item reveal">
-      <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=600" alt="Cupcakes" loading="lazy"/>
-      <div class="g-overlay"><div class="g-overlay-text"><span class="g-overlay-label">Cupcakes</span><span class="g-overlay-name">Detalle Especial</span></div></div>
-    </div>
-  </div>
-  <div class="gallery-cta reveal">
-    <p>Síguenos para ver más creaciones cada semana</p>
-    <a href="https://instagram.com/tuusuario" class="btn-insta" target="_blank"><i class="fab fa-instagram"></i><span>@cavy.postres</span></a>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="contacto" class="sec">
-  <p class="sec-label reveal">Reseñas</p>
-  <h2 class="sec-title reveal">Lo que dicen nuestros <em>CAVY-Lovers</em></h2>
-  <div class="testi-grid">
-    <div class="testi-card reveal">
-      <div class="testi-stars">★★★★★</div>
-      <p class="testi-text">"El mejor cheesecake que he probado en mi vida. La textura es increíble y el sabor es perfecto. ¡100% recomendados!"</p>
-      <span class="testi-author">— María G.</span>
-    </div>
-    <div class="testi-card reveal">
-      <div class="testi-stars">★★★★★</div>
-      <p class="testi-text">"Atención súper rápida por WhatsApp y los postres llegan frescos y perfectamente presentados. Son los mejores."</p>
-      <span class="testi-author">— Juan P.</span>
-    </div>
-    <div class="testi-card reveal">
-      <div class="testi-stars">★★★★★</div>
-      <p class="testi-text">"Pedí una torta personalizada para mi cumple y superó todas mis expectativas. El diseño fue exactamente lo que quería."</p>
-      <span class="testi-author">— Lucía M.</span>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <span class="footer-logo">CAVY</span>
-      <p>Postres artesanales hechos con amor en cada detalle. Porque cada momento merece ser dulce.</p>
-    </div>
-    <div>
-      <p class="footer-links-title">Navegación</p>
-      <ul class="footer-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#productos">Postres</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#contacto">Reseñas</a></li>
-      </ul>
-    </div>
-    <div>
-      <p class="footer-links-title">Contáctanos</p>
-      <ul class="footer-links">
-        <li><a href="https://wa.me/51962284422">WhatsApp</a></li>
-        <li><a href="https://instagram.com/tuusuario">Instagram</a></li>
-        <li><a href="https://facebook.com/tuusuario">Facebook</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p class="footer-copy">© 2025 CAVY DELIGHTS — Hecho con amor </p>
-    <div class="footer-socials">
-      <a href="https://instagram.com/tuusuario" class="f-social" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://facebook.com/tuusuario" class="f-social" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://tiktok.com/@tuusuario" class="f-social" target="_blank"><i class="fab fa-tiktok"></i></a>
-    </div>
-  </div>
-</footer>
-
-<!-- FLOATING SOCIAL BUTTONS -->
-<div class="redes-flotantes">
-  <a href="https://wa.me/51962284422" class="btn-flotante whatsapp" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-  <a href="https://facebook.com/tuusuario" class="btn-flotante facebook" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-  <a href="https://instagram.com/tuusuario" class="btn-flotante instagram" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-</div>
-
-
-<script>
-  /* ══ LOADER — ocultar tras máximo 4 s ══ */
-  (function () {
-    const loader = document.getElementById('page-loader');
-    let hidden = false;
-
-    function hideLoader() {
-      if (hidden) return;
-      hidden = true;
-      loader.classList.add('loader-hidden');
-      // Quitar del DOM después de la transición (0.7 s)
-      setTimeout(() => loader.remove(), 800);
-    }
-
-    // Se oculta cuando la página termina de cargar O a los 4 s, lo que ocurra primero
-    window.addEventListener('load', function () {
-      // Mínimo 1.8 s para que se vea bonito, máximo 4 s
-      const elapsed = performance.now();
-      const delay = Math.max(0, 2800 - elapsed);
-      setTimeout(hideLoader, delay);
-    });
-
-    // Seguro de 4 s por si window.load tarda demasiado
-    setTimeout(hideLoader, 4000);
-  })();
-
-  /* ══ Navbar scroll ══ */
-  const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 60);
-  });
-
-  /* ══ Hamburger ══ */
-  const hamburger = document.getElementById('hamburger');
-  hamburger.addEventListener('click', () => {
-    document.getElementById('navLinks').classList.toggle('open');
-    hamburger.classList.toggle('open');
-  });
-
-  /* ══ Active nav link on scroll ══ */
-  const sections = document.querySelectorAll('section[id], header[id]');
-  const navLinks = document.querySelectorAll('.nav-links a');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(a => a.classList.remove('active'));
-        const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
-        if (active) active.classList.add('active');
-      }
-    });
-  }, { threshold: 0.4 });
-  sections.forEach(s => observer.observe(s));
-
-  /* ══ Reveal animation ══ */
-  const revealEls = document.querySelectorAll('.reveal');
-  const revealObs = new IntersectionObserver((entries) => {
-    entries.forEach((e, i) => {
-      if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add('visible'), i * 75);
-        revealObs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  revealEls.forEach(el => revealObs.observe(el));
-
-  /* ══ WhatsApp ══ */
-  function pedirWhatsApp(producto) {
-    const telefono = "51962284422";
-    const mensaje = `Hola CAVY! Me interesa, y quisiera hacer pedido de torta helada ${producto}`;
-    window.open(`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`, '_blank');
-  }
-
-  /* ══ Popup — aparece 3 s después de que cierre el loader ══ */
-  setTimeout(() => {
-    const p = document.getElementById('miPopup');
-    if (p) p.style.display = 'flex';
-  }, 7000); // 4s loader + 3s de gracia
-
-  function cerrarPopup() {
-    const p = document.getElementById('miPopup');
-    if (p) p.style.display = 'none';
-  }
-  window.addEventListener('click', (e) => {
-    const p = document.getElementById('miPopup');
-    if (e.target === p) cerrarPopup();
-  });
-</script>
+  <script src="js/cavy.js"></script>
 </body>
 </html>
