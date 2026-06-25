@@ -20,7 +20,7 @@ const productos = [
     etiqueta: "A pedido",
     descripcion: "Delicioso pie de manzana con relleno casero, trozos de manzana y un toque de canela sobre una base crocante.",
     precio: "Cotizar",
-    imagen: "pie-manzana.png"
+    imagen: "pie-manzana2.jpeg"
   },
   {
     nombre: "Cupcakes decorados",
@@ -47,12 +47,28 @@ const productos = [
     imagen: "crema-volteada.jpeg"
   },
   {
-    nombre: "Brownie intenso",
+    nombre: "ChocoFlan",
     categoria: "postres",
-    etiqueta: "Chocolate",
+    etiqueta: "Chocolate  y crema volteada",
     descripcion: "Brownie húmedo con sabor profundo a chocolate.",
     precio: "Desde S/ 18",
-    imagen: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=900&auto=format&fit=crop"
+    imagen: "chocoflan.jpeg"
+  },
+  {
+    nombre: "Sueño de Piña",
+    categoria: "postres",
+    etiqueta: "Piña y crema",
+    descripcion: "Una mezcla de sabores tropicales con textura suave y cremosa.",
+    precio: "Cotizar",
+    imagen: "sueño-piña.jpeg"
+  },
+  {
+    nombre: "Keke de Piña",
+    categoria: "postres",
+    etiqueta: "Piña",
+    descripcion: "Un keke suave y esponjoso con sabor a piña y una capa cremosa.",
+    precio: "Cotizar",
+    imagen: "keke-piña.jpeg"
   }
 ];
 
