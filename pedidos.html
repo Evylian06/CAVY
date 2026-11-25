@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cómo pedir en CAVY: elige tu postre, confirma los detalles y recibe tu pedido por WhatsApp.">
+  <title>Pedidos | CAVY</title>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CAVY Postres & Más">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:title" content="Pedidos | CAVY Postres & Más">
+  <meta property="og:description" content="Cómo pedir en CAVY: elige tu postre, confirma los detalles y recibe tu pedido por WhatsApp.">
+  <meta property="og:url" content="https://cavy-mocha.vercel.app/pedidos.html">
+  <meta property="og:image" content="https://cavy-mocha.vercel.app/cavy-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Torta helada artesanal de CAVY">
+  <link rel="icon" type="image/x-icon" href="icocavy.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/cavy.css">
+</head>
+<body>
+  <nav class="navbar solid" id="navbar" aria-label="Navegación principal">
+    <a class="brand" href="index.html" aria-label="Ir al inicio de CAVY">
+      <span>CAVY</span>
+      <small>Postres & Más</small>
+    </a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a class="active" href="pedidos.html" aria-current="page">Pedidos</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="page-hero">
+      <p class="eyebrow">Cómo pedir</p>
+      <h1>Pedidos</h1>
+      <p>Coordinamos sabor, cantidad, fecha y lugar de entrega directamente por WhatsApp, con la anticipación que necesites.</p>
+    </header>
+
+    <section class="section" aria-label="Pasos para hacer un pedido">
+      <div class="order-panel reveal">
+        <div>
+          <p class="eyebrow">Cómo pedir</p>
+          <h2>Tu pedido en 3 pasos</h2>
+        </div>
+        <ol class="steps">
+          <li><span>1</span>Elige el producto o cuéntanos tu idea.</li>
+          <li><span>2</span>Confirma fecha, cantidad, dedicatoria y lugar de entrega.</li>
+          <li><span>3</span>Recibe la confirmación por WhatsApp y disfruta.</li>
+        </ol>
+        <div class="order-actions">
+          <a class="btn primary js-whatsapp" href="https://wa.me/51989191035?text=Hola%20CAVY%2C%20quisiera%20cotizar%20un%20pedido%20de%20postres." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Iniciar consulta por WhatsApp</a>
+          <a class="btn secondary" href="productos.html">Ver productos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <a class="footer-brand" href="index.html">CAVY</a>
+        <p>Postres & Más. Pastelería artesanal para momentos dulces.</p>
+      </div>
+      <div class="footer-socials">
+        <a class="js-instagram" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a class="js-facebook" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> CAVY. Todos los derechos reservados.</p>
+  </footer>
+
+  <div class="floating-socials" aria-label="Redes sociales de CAVY">
+    <a class="float-btn instagram js-instagram" target="_blank" rel="noopener" aria-label="Ver Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a class="float-btn facebook js-facebook" target="_blank" rel="noopener" aria-label="Ver Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+  </div>
+
+  <script src="js/cavy.js"></script>
+</body>
+</html>
