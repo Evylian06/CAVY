@@ -158,16 +158,14 @@ function configurarEnlaces() {
     document.querySelectorAll(selector).forEach((link) => {
       if (url) {
         link.href = url;
-        link.hidden = false;
+        link.removeAttribute("aria-disabled");
+        link.removeAttribute("title");
       } else {
         link.removeAttribute("href");
-        link.hidden = true;
+        link.setAttribute("aria-disabled", "true");
+        link.title = "Próximamente";
       }
     });
-  });
-
-  document.querySelectorAll(".floating-socials, .footer-socials").forEach((grupo) => {
-    grupo.hidden = grupo.querySelectorAll("a:not([hidden])").length === 0;
   });
 }
 

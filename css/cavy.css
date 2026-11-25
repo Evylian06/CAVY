@@ -40,8 +40,8 @@ a {
   color: inherit;
 }
 
-[hidden] {
-  display: none !important;
+a[aria-disabled="true"] {
+  cursor: default;
 }
 
 button,
